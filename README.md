@@ -8,12 +8,12 @@
 
 See Actions below: 
 
-- Deploy: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/deploy` `["IOSK", "880000000", "1000"]`
-- Mint: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/mint` `["IOSK", "1000", ""]`
-- Transfer: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/transfer` `["IOSK", "1", "address"]`
-- List: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/list` `["IOSK", "1", "100"]`
-- Unlist: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/unlist` `["IOSK", "1"]`
-- Buy: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/buy` `["IOSK", "1"]`
+- Deploy: `Contract44gan61mY9XaDicnqqLuu1PtUzVpdJj4g9wGpebjYcKu/deploy` `["IOSK", "880000000", "1000"]`
+- Mint: `Contract44gan61mY9XaDicnqqLuu1PtUzVpdJj4g9wGpebjYcKu/mint` `["IOSK", "1000", ""]`
+- Transfer: `Contract44gan61mY9XaDicnqqLuu1PtUzVpdJj4g9wGpebjYcKu/transfer` `["IOSK", "1", "address"]`
+- List: `Contract44gan61mY9XaDicnqqLuu1PtUzVpdJj4g9wGpebjYcKu/list` `["IOSK", "1", "100"]`
+- Unlist: `Contract44gan61mY9XaDicnqqLuu1PtUzVpdJj4g9wGpebjYcKu/unlist` `["IOSK", "1"]`
+- Buy: `Contract44gan61mY9XaDicnqqLuu1PtUzVpdJj4g9wGpebjYcKu/buy` `["IOSK", "1"]`
 
 ## Mint with nodejs
 
@@ -44,7 +44,7 @@ async function main() {
   const mintCount = 10; // max is 10, otherwise will killed
   const tx = new Tx(1, buyCount * 45000);
   tx.actions = Array.from({ length: mintCount }).map(() => ({
-    contract: 'Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx',
+    contract: 'Contract44gan61mY9XaDicnqqLuu1PtUzVpdJj4g9wGpebjYcKu',
     actionName: 'mint',
     data: JSON.stringify(['IOSI', '1000', ''])
   }))
