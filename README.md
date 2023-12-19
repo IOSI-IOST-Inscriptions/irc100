@@ -2,18 +2,18 @@
 
 ## Token Economic
 
-- Token: `iOSI`
+- Token: `IOSK`
 - Supply: `880000000`
 - limit: `1000`
 
 See Actions below: 
 
-- Deploy: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/deploy` `["IOSI", "880000000", "1000"]`
-- Mint: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/mint` `["IOSI", "1000"]`
-- Transfer: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/transfer` `["IOSI", "1", "address"]`
-- List: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/list` `["IOSI", "1", "100"]`
-- Unlist: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/unlist` `["IOSI", "1"]`
-- Buy: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/buy` `["IOSI", "1"]`
+- Deploy: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/deploy` `["IOSK", "880000000", "1000"]`
+- Mint: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/mint` `["IOSK", "1000"]`
+- Transfer: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/transfer` `["IOSK", "1", "address"]`
+- List: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/list` `["IOSK", "1", "100"]`
+- Unlist: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/unlist` `["IOSK", "1"]`
+- Buy: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/buy` `["IOSK", "1"]`
 
 ## Mint with nodejs
 
@@ -65,19 +65,19 @@ get transaction tx_receipt
 
 ### deploy
 
-`{op: "deploy", tick: "IOSI", max: "880000000", lim: "1000" }`
+`{op: "deploy", tick: "IOSK", max: "880000000", lim: "1000" }`
 
 ### mint
 
-`{op: "mint", tick: "IOSI", amt: "1000", id: "1" }`
+`{op: "mint", tick: "IOSK", amt: "1000", id: "1" }`
 
 ### transfer
 
-`{op: "transfer", tick: "IOSI", id: "1", lim: "1000", from: "abc", to: "def" }`
+`{op: "transfer", tick: "IOSK", id: "1", lim: "1000", from: "abc", to: "def" }`
 
 ### list
 
-`{op: "list", tick: "IOSI", id: "1", owner: "abc", price: "100" }`
+`{op: "list", tick: "IOSK", id: "1", owner: "abc", price: "100" }`
 
 ### unlist
 
