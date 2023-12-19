@@ -9,7 +9,7 @@
 See Actions below: 
 
 - Deploy: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/deploy` `["IOSK", "880000000", "1000"]`
-- Mint: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/mint` `["IOSK", "1000"]`
+- Mint: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/mint` `["IOSK", "1000", ""]`
 - Transfer: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/transfer` `["IOSK", "1", "address"]`
 - List: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/list` `["IOSK", "1", "100"]`
 - Unlist: `Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx/unlist` `["IOSK", "1"]`
@@ -46,7 +46,7 @@ async function main() {
   tx.actions = Array.from({ length: mintCount }).map(() => ({
     contract: 'Contract6vU3ZWL57jQeFpbuqUxQfL5PGeFJekWrDG2WVGjWqrKx',
     actionName: 'mint',
-    data: JSON.stringify(['IOSI', '1000'])
+    data: JSON.stringify(['IOSI', '1000', ''])
   }))
   tx.amount_limit = [{
     token: 'iost',
@@ -84,3 +84,8 @@ get transaction tx_receipt
 `{op: "unlist", tick: "IOSI", id: "1", owner: "abc" }`
 
 ### buy
+
+
+## Notice
+
+The account requires 500 IOST
